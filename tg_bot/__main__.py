@@ -50,13 +50,13 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-**🅷🅴🅻🅻🅾️ {}, ᴍʏ ɴᴀᴍᴇ ɪs *{}*!\n 
-ᴘᴇᴏᴘʟᴇ's sᴏᴍᴇᴛɪᴍᴇ ғɪɴᴅ *ʜᴀʀᴅ* ᴛᴏ ᴍᴀɴᴀɢᴇ ᴛʜᴇɪʀ ɢʀᴏᴜᴘs, *sᴏ ɪ ᴀᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ*.\n
-[ᴍʏ Mⱥຮteℝ🔥](https://t.me/HEMANTHGAMING1K).
- 
-ʏᴏᴜ ᴄᴀɴ ғɪɴᴅ ᴛʜᴇ ʟɪsᴛ ᴏғ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs ᴡɪᴛʜ /help.
+ ───『[Hg bot](https://telegra.ph/file/0c48783bf8a446a82b30d.jpg)』───
+Hello! User,👋 \n this is edited by @NOOBGUY_OP
+➪ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴍᴀᴋᴇ ᴀᴅᴍɪɴ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴇxᴘʟᴏsɪᴠᴇ.
+┏━━━━━━━━━━━━━━━━━━━━━┓
+┃➪ ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ʜᴇʟᴘ ᴛᴏ ┃ᴇxᴘʟᴏʀᴇ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴍᴇ ᴀɴᴅ ᴍʏ ┃ғᴇᴀᴛᴜʀᴇs.
+┗━━━━━━━━━━━━━━━━━━━━━┛
 """
-
 HELP_STRINGS = """
 ʜᴇʟʟᴏ! ᴍʏ ɴᴀᴍᴇ *{}*.
 *ᴍᴀɪɴ ᴄᴏᴍᴍᴀɴᴅs ᴀᴠᴀɪʟᴀʙʟᴇ*:
@@ -162,22 +162,25 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
                     [[
-                        InlineKeyboardButton(
-                            text="ADD ME 🤖TO YOUR GROUP",url="t.me/{}?startgroup=true".format(bot.username))
+        InlineKeyboardButton(
+                            text="➕ Add Me ➕",
+                            url="t.me/VegetaRobot?startgroup=true"),
+                       InlineKeyboardButton(text="❤Bot Support", url="t.me/vegetaSupport"),
                     ],
-                     [
-                         InlineKeyboardButton(
-                             text="👻 HELP 👻",
-                            callback_data="help_back".format(bot.username)),
-                         InlineKeyboardButton(
-                             text="UPDATES 🔀",
-                             url="https://t.me/hgbotsupportchannel")
+                   [
+                       InlineKeyboardButton(text="🔐 Help ", callback_data="help_back"),
+                       InlineKeyboardButton(text="📊 Network", url="t.me/pegasusXteam"),
+                       InlineKeyboardButton(text="🔔 Logs", url="t.me/pegasusLogs"),
                      ],
-                     [
-                         InlineKeyboardButton(
-                             text="💻 MY CREATOR 💻",
-                             url="https://t.me/HEMANTHGAMING1K")
-                     ]]))
+                    [                  
+                       InlineKeyboardButton(
+                             text="🗯 Support",
+                             url=f"https://t.me/{SUPPORT_CHAT}"),
+                       InlineKeyboardButton(
+                             text="📢 Updates",
+                             url="https://t.me/PegasusUpdates"
+         ),
+     ]]))
 
     else:
         update.effective_message.reply_text("╔═════════════════╗\n       「 🔥 𝙂𝘼𝙇𝘼𝙓𝙔 𝘽𝙊𝙏 🔥 」\n╚═════════════════╝",reply_markup=InlineKeyboardMarkup(
