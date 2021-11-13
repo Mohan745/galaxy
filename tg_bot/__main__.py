@@ -51,7 +51,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
  ───『[Hg bot](https://telegra.ph/file/f4875588199b081024abe.jpg)』───
-Hello! User,👋 \n this is edited by @HEMANTHGAMING1K
+Hello! User,👋 \n this is edited by @noobguy_op
 ➪ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴍᴀᴋᴇ ᴀᴅᴍɪɴ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴇxᴘʟᴏsɪᴠᴇ.
 ┏━━━━━━━━━━━━━━━━━━━━━┓
 ┃➪ ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ʜᴇʟᴘ ᴛᴏ ┃ᴇxᴘʟᴏʀᴇ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴍᴇ ᴀɴᴅ ᴍʏ ┃ғᴇᴀᴛᴜʀᴇs.
@@ -175,7 +175,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                     [                  
                        InlineKeyboardButton(
                              text="🗯 Support",
-                             url=f"https://t.me/{SUPPORT_CHAT}"),
+                             url=f"https://t.me/editpaniko"),
                        InlineKeyboardButton(
                              text="📢 Updates",
                              url="https://t.me/PegasusUpdates"
@@ -563,7 +563,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Using long polling.")
+        LOGGER.info("working fine by @noobguy_op.")
         updater.start_polling(timeout=15, read_latency=4)
 
     updater.idle()
