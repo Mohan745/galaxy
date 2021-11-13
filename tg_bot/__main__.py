@@ -50,8 +50,8 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
- ───『[Hg bot](https://telegra.ph/file/0c48783bf8a446a82b30d.jpg)』───
-Hello! User,👋 \n this is edited by @NOOBGUY_OP
+ ───『[Hg bot](https://telegra.ph/file/f4875588199b081024abe.jpg)』───
+Hello! User,👋 \n this is edited by @HEMANTHGAMING1K
 ➪ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴍᴀᴋᴇ ᴀᴅᴍɪɴ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴇxᴘʟᴏsɪᴠᴇ.
 ┏━━━━━━━━━━━━━━━━━━━━━┓
 ┃➪ ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ʜᴇʟᴘ ᴛᴏ ┃ᴇxᴘʟᴏʀᴇ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴍᴇ ᴀɴᴅ ᴍʏ ┃ғᴇᴀᴛᴜʀᴇs.
@@ -64,7 +64,7 @@ HELP_STRINGS = """
  ➥ /help <ᴍᴏᴅᴜʟᴇ ɴᴀᴍᴇ>: ᴘᴍ's ʏᴏᴜ ɪɴғᴏ ᴀʙᴏᴜᴛ ᴛʜᴀᴛ ᴍᴏᴅᴜʟᴇ.
 {}
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ᴇɪᴛʜᴇʀ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ / ᴏʀ !.\n")
-TECHNO_IMG = "https://telegra.ph/file/eb9045b1d00ac9a34fb1f.jpg"
+TECHNO_IMG = "https://telegra.ph/file/f4875588199b081024abe.jpg"
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
